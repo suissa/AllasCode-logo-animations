@@ -6,26 +6,5 @@
 <title>AllasCode — Logo Animation</title>
 <style>
 :root{--cyan:#13e6ed;--blue:#1269ff;--bg:#010711}
-*{box-sizing:border-box}html,body{height:100%;margin:0}body{overflow:hidden;background:radial-gradient(circle at 50% 45%,#07172c 0,#020b17 34%,#00040b 70%,#000 100%);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
-.stage{height:100%;display:grid;place-items:center;perspective:1000px}.brand{position:relative;width:min(72vw,720px);aspect-ratio:1;display:grid;place-items:center;animation:brandIn 1.2s cubic-bezier(.2,.8,.2,1) both}.logo{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 0 rgba(0,220,255,0));animation:logoIn 2.2s cubic-bezier(.16,1,.3,1) both,breathe 4s 2.4s ease-in-out infinite}.glow{position:absolute;width:55%;height:55%;border-radius:50%;background:radial-gradient(circle,rgba(0,225,255,.24),rgba(24,86,255,.08) 45%,transparent 72%);filter:blur(24px);opacity:0;animation:glow 2.4s .45s ease-out both,pulse 4s 2.6s ease-in-out infinite;pointer-events:none}.scan{position:absolute;inset:12%;overflow:hidden;mask-image:linear-gradient(transparent,#000 20%,#000 80%,transparent);opacity:0;animation:scanWrap 1.5s .6s ease both;pointer-events:none}.scan:after{content:"";position:absolute;left:-35%;top:0;width:25%;height:100%;transform:skewX(-18deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),rgba(40,230,255,.35),transparent);filter:blur(8px);animation:sweep 1.2s .75s cubic-bezier(.2,.7,.2,1) both}.line{position:absolute;left:50%;bottom:15%;width:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);transform:translateX(-50%);box-shadow:0 0 12px var(--cyan);animation:line 1.25s 1.1s ease-out both}
-@keyframes brandIn{0%{transform:translateZ(-120px) scale(.84)}100%{transform:none}}
-@keyframes logoIn{0%{opacity:0;transform:scale(.82);filter:blur(18px) brightness(2) drop-shadow(0 0 30px rgba(0,220,255,.9))}42%{opacity:1;filter:blur(0) brightness(1.35) drop-shadow(0 0 34px rgba(0,220,255,.45))}100%{opacity:1;transform:scale(1);filter:drop-shadow(0 0 10px rgba(0,180,255,.12))}}
-@keyframes glow{0%{opacity:0;transform:scale(.45)}45%{opacity:1}100%{opacity:.42;transform:scale(1.15)}}
-@keyframes pulse{50%{opacity:.65;transform:scale(1.23)}}
-@keyframes breathe{50%{transform:scale(1.012);filter:drop-shadow(0 0 18px rgba(0,200,255,.2))}}
-@keyframes scanWrap{0%,100%{opacity:0}20%,80%{opacity:1}}
-@keyframes sweep{from{left:-40%}to{left:125%}}
-@keyframes line{0%{width:0;opacity:0}40%{opacity:1}100%{width:58%;opacity:0}}
-@media(prefers-reduced-motion:reduce){.brand,.logo,.glow,.scan,.scan:after,.line{animation:none}.logo{opacity:1}}
-</style>
-</head>
-<body>
-<main class="stage" aria-label="AllasCode animated logo">
-  <section class="brand">
-    <div class="glow"></div>
-    <img class="logo" src="allascode-logo.png" alt="AllasCode" />
-    <div class="scan"></div><div class="line"></div>
-  </section>
-</main>
-</body>
-</html>
+*{box-sizing:border-box}html,body{height:100%;margin:0}body{overflow:hidden;background:radial-gradient(circle at 50% 45%,#07172c 0,#020b17 34%,#00040b 70%,#000 100%);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}.stage{height:100%;display:grid;place-items:center;perspective:1000px}.brand{position:relative;width:min(72vw,720px);aspect-ratio:1;display:grid;place-items:center;animation:brandIn 1.2s cubic-bezier(.2,.8,.2,1) both}.logo{width:100%;height:100%;object-fit:contain;animation:logoIn 2.2s cubic-bezier(.16,1,.3,1) both,breathe 4s 2.4s ease-in-out infinite}.glow{position:absolute;width:55%;height:55%;border-radius:50%;background:radial-gradient(circle,rgba(0,225,255,.24),rgba(24,86,255,.08) 45%,transparent 72%);filter:blur(24px);opacity:0;animation:glow 2.4s .45s ease-out both,pulse 4s 2.6s ease-in-out infinite;pointer-events:none}.scan{position:absolute;inset:12%;overflow:hidden;mask-image:linear-gradient(transparent,#000 20%,#000 80%,transparent);opacity:0;animation:scanWrap 1.5s .6s ease both;pointer-events:none}.scan:after{content:"";position:absolute;left:-35%;top:0;width:25%;height:100%;transform:skewX(-18deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),rgba(40,230,255,.35),transparent);filter:blur(8px);animation:sweep 1.2s .75s cubic-bezier(.2,.7,.2,1) both}.line{position:absolute;left:50%;bottom:15%;width:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);transform:translateX(-50%);box-shadow:0 0 12px var(--cyan);animation:line 1.25s 1.1s ease-out both}@keyframes brandIn{0%{transform:translateZ(-120px) scale(.84)}100%{transform:none}}@keyframes logoIn{0%{opacity:0;transform:scale(.82);filter:blur(18px) brightness(2) drop-shadow(0 0 30px rgba(0,220,255,.9))}42%{opacity:1;filter:blur(0) brightness(1.35) drop-shadow(0 0 34px rgba(0,220,255,.45))}100%{opacity:1;transform:scale(1);filter:drop-shadow(0 0 10px rgba(0,180,255,.12))}}@keyframes glow{0%{opacity:0;transform:scale(.45)}45%{opacity:1}100%{opacity:.42;transform:scale(1.15)}}@keyframes pulse{50%{opacity:.65;transform:scale(1.23)}}@keyframes breathe{50%{transform:scale(1.012);filter:drop-shadow(0 0 18px rgba(0,200,255,.2))}}@keyframes scanWrap{0%,100%{opacity:0}20%,80%{opacity:1}}@keyframes sweep{from{left:-40%}to{left:125%}}@keyframes line{0%{width:0;opacity:0}40%{opacity:1}100%{width:58%;opacity:0}}@media(prefers-reduced-motion:reduce){.brand,.logo,.glow,.scan,.scan:after,.line{animation:none}.logo{opacity:1}}
+</style></head><body><main class="stage" aria-label="AllasCode animated logo"><section class="brand"><div class="glow"></div><img class="logo" src="allascode-logo.svg" alt="AllasCode"/><div class="scan"></div><div class="line"></div></section></main></body></html>
